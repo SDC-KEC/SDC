@@ -1,0 +1,157 @@
+@media only screen and (min-width: 480px){
+    
+    p{
+        font-size: 24px;
+    }
+    #wrap{
+        width: 250px;
+        height: 500px;
+        text-align: center;
+        margin: 50px;
+        align-items: center; 
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 30px;
+        font-family: tahoma;
+        color: rgb(0, 0, 0);
+        padding-top:20% ;
+    }
+    #form-wrap{
+        overflow: hidden;
+        height: 447px;
+        position: relative;
+        top: -100px;
+        transition: all 1.5s ease-in-out .3s;
+    }
+    .container{
+        width: 250px;
+        
+    }
+    #form-wrap:before{
+        content: "";
+        position: absolute;
+        bottom: 128px;
+        left: 0px;
+        background-size: 100%;
+        background-image: url('images/before.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80px;
+    }
+    
+    #form-wrap:after{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        background-size: 100%;
+        background-image: url('images/after.png');
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 120px;
+    }
+    
+    #form-wrap.hide:after,
+    #form-wrap.hide::before{
+        display: flex;
+    }
+    
+    #form-wrap:hover{
+        height: 777px;
+        top:-200px;
+    
+    }
+    form{
+        background:white;
+        position: relative;
+        top: 325px;
+        overflow: hidden;
+        height: 60px;
+        width: 100%;
+        left:2px;
+        margin: 0px auto;
+        padding: 20px;
+        border: 1px solid rgb(26, 10, 98);
+        border-right: 3px;
+        transition: all 1s ease-in-out .3s;
+    }
+    
+    #form-wrap:hover form{
+        height: 540px;
+        width: 100%;
+    }
+    
+    label{
+        margin: 11px 20px 0 0;
+        font-size: 15px;
+        color: grey;
+        text-decoration: uppercase;
+    }
+    
+    input[type=text], textarea{
+        font: 14px normal uppercase, arial, serif;
+        color: dimgray;
+        background: none;
+        width: 100%;
+        height: 37px;
+        padding: 0px 10px;
+        margin: 0 0 10px 0;
+        border: 1px solid #000000;
+        border-radius: 10px;
+    
+    }
+    
+    textarea{
+        height: 80px;
+        padding-top: 14px;
+    }
+    
+    textarea:focus, input[type=text]:focus{
+        background: white;
+    
+    }
+    
+    button{
+        font-family: tahoma;
+        width: 80%;
+        font-size: 18px;
+        position: relative;
+        text-align: center;
+        background: black;
+        color: white;
+        cursor: pointer;
+        border-radius: 10px;
+        transition: opacity 0.1s ease-in-out 0s;
+    }
+    
+    /* #form-wrap input[type=submit]{
+        position: relative;
+        font-family: tahoma;
+        font-size: 24px;
+        color: rgb(0, 0, 0);
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        background: black;
+        cursor: pointer;
+        border-radius: 3px;
+        transition: opacity 0.1s ease-in-out 0s;
+    } */
+    
+    #from-wrap:hover button{
+        z-index: 5;
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out 1.3s;
+    }
+    
+    footer{
+        position: absolute;
+        background: var(--color3);
+        /* bottom:-1270px; */
+        width: 100vw;
+        padding-top: 40px;
+        color: #fff;
+    }
+    
+}

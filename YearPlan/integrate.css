@@ -1,0 +1,16 @@
+.yearPlan{
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    background: black;
+}
+.globe{
+    z-index: 1;
+}
+
+@media only screen and (max-width: 480px){
+    .yearPlan{
+        height: 70vh;
+    }
+    
+}

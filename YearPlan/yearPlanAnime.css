@@ -1,0 +1,185 @@
+:root{
+    --color1:#FF0376;
+    --color2:#07C8C8;
+    --color3:#003459;
+}
+
+.toggleBtn > img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+.click-me{
+    position: absolute;
+    background-color: #FF0376;
+    color: white;
+    width: 80px;
+    height: 30px;
+    border: 1px solid ;
+    border-radius: 2rem;
+    z-index: 10;
+    cursor: pointer;
+    /* left: 155px; */
+    /* margin-left: -300px; */
+}
+
+.yearPlanTitle{
+    color: white;
+    align-items: center;
+}
+
+.yearPlan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+/* .yearPlan > h1{
+    text-align: center;
+    padding-top:8%;  
+} */
+#yearPlanHeading{
+    color: white;
+    position: relative;
+    top: -50%;
+    /* left: 45%; */
+    /* width: 100%; */
+}
+
+.menu{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin-left: -300px;
+    /* background-color: #07C8C8; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu li{
+    margin-left: -10px;
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 280px;
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    transform: rotate(0deg) translateX(80px);
+}
+
+.menu.active li{
+    transform: rotate(calc(360deg / 10 * var(--i)));
+} 
+
+.menu li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    /* border-radius: 10%;
+    padding-left: 30px;
+    padding-right: 30px; */
+    transform: rotate(calc(360deg / -10 * var(--i)));
+    box-shadow: 0 3px 4px rgba(0,0,0,0.15);
+    color: #111;
+    transition: 0.5s;
+}
+.menu li a:hover{
+    color: var(--color1);
+}
+.toggleBtn{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    /* margin-left: -400px; */
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    font-size: 2em;
+    transition: transform 1.25s;
+}
+
+.menu.active .toggleBtn{
+    transform: rotate(360deg);
+}
+
+.events >a > img{
+    height: 100px;
+    width: 100px;
+}
+
+@media only screen and (max-width:800px){
+    .toggleBtn > img{
+        height: 180px;
+        width: 180px;
+    }
+    .menu li{
+        transform-origin: 150px;
+        margin-left: -15px;
+    }
+    .menu{
+        margin-left: 0%;
+    }
+    .events >a > img{
+        height: 80px;
+        width: 80px;
+    }
+}
+@media only screen and (max-width:480px){
+    #yearPlanHeading{
+        left: 20%;
+    }
+    .toggleBtn > img{
+        height: 150px;
+        width: 150px;
+        /* margin-left: -80px; */
+    }
+    .menu li{
+        transform-origin: 150px;
+        margin-left: -70px;
+    }
+    .menu{
+        margin-left: -20%;
+    }
+    .events >a > img{
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width:300px){
+    .toggleBtn > img{
+        height: 110px;
+        width: 110px;
+    }
+    .menu li{
+        transform-origin: 140px;
+        margin-left: -50px;
+    }
+    .menu{
+        margin-left: -60%;
+    }
+    .events >a > img{
+        height: 75px;
+        width: 75px;
+    }
+}
+    
+.globe{
+    z-index: -50;
+}
+
+/* .img_scroll{
+    align-items: baseline;
+    margin-bottom: 0;
+} */
